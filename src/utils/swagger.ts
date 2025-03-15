@@ -10,8 +10,8 @@ const options = {
     },
     servers: [
       {
-        url: process.env.API_URL || 'http://localhost:3000',
-        description: 'Development server',
+        url: process.env.API_URL || 'https://phoenix-imf-gadget-api-hn2o.onrender.com',
+        description: 'Production server',
       },
     ],
     components: {

@@ -28,7 +28,7 @@ app.use(limiter);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/gadgets', gadgetRoutes);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get('/health', (req, res) => {
     res.json({ status: 'ok', message: 'IMF API operational' });

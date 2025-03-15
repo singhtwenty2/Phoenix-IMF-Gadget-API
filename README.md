@@ -9,7 +9,7 @@
 
 ## 🔒 Secure Field Operations Gadget Management System
 
-The IMF Gadget API is a sophisticated, secure RESTful service for managing mission-critical field operation gadgets. Built with TypeScript, Express, and Prisma, this API provides comprehensive gadget lifecycle management with role-based access control.
+The IMF Gadget API is a sophisticated, secure RESTful service designed for managing mission-critical field operation gadgets. Built with TypeScript, Express, and Prisma, this API provides comprehensive gadget lifecycle management with role-based access control.
 
 ## 🌟 Features
 
@@ -40,7 +40,7 @@ The IMF Gadget API is a sophisticated, secure RESTful service for managing missi
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/imf-gadget-api.git
+git clone https://github.com/singhtwenty2/Phoenix-IMF-Gadget-API
 cd imf-gadget-api
 
 # Install dependencies
@@ -90,7 +90,7 @@ JWT_EXPIRATION="24h"
 The API includes comprehensive Swagger documentation available at:
 
 ```
-http://localhost:3000/api-docs
+https://phoenix-imf-gadget-api-hn2o.onrender.com/
 ```
 
 This interactive interface allows you to:
@@ -138,17 +138,17 @@ The API uses JWT (JSON Web Token) for authentication:
 
 ```bash
 # Register a new user
-curl -X POST http://localhost:3000/api/auth/register \
+curl -X POST https://phoenix-imf-gadget-api-hn2o.onrender.com/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{"username": "agent007", "password": "secret", "role": "agent"}'
 
 # Login and receive token
-curl -X POST http://localhost:3000/api/auth/login \
+curl -X POST https://phoenix-imf-gadget-api-hn2o.onrender.com/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"username": "agent007", "password": "secret"}'
 
 # Use token in requests
-curl -X GET http://localhost:3000/api/gadgets \
+curl -X GET https://phoenix-imf-gadget-api-hn2o.onrender.com/api/gadgets \
   -H "Authorization: Bearer your_jwt_token"
 ```
 
